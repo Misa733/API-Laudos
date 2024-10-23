@@ -1,7 +1,11 @@
 const express = require('express');
+const connectDB = require('./config/db'); 
 const laudosRoutes = require('./routes/laudos');
 
 const app = express();
+
+// Conectar ao MongoDB
+connectDB();
 
 // Middleware para analisar o corpo das requisições JSON
 app.use(express.json());

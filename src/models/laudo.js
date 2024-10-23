@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+
 const LaudoSchema = new mongoose.Schema({
   data: {
     type: String,

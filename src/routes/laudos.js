@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
+
 // Rota para listar todos os laudos
 router.get('/laudos', async (req, res) => {
   try {
@@ -33,5 +34,5 @@ router.post('/teste', (req, res) => {
 });
 
 
-// Exportar o roteador para uso no app principal
+
 module.exports = router;
